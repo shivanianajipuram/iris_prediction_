@@ -103,33 +103,6 @@ Iris-Flower-Classification/
 ├── requirements.txt
 └── README.md
 # How to Run Locally
-
-## Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Iris-Flower-Classification.git
-```
-
-## Move into the project folder
-
-```bash
-cd Iris-Flower-Classification
-```
-
-## Create virtual environment
-
-```bash
-python -m venv venv
-```
-
-## Activate virtual environment (Windows)
-
-```bash
-venv\Scripts\activate
-```
-
-## Install dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
