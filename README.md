@@ -1,53 +1,135 @@
-# iris_prediction_
-Iris Flower Classification web app using Machine Learning and Streamlit. This project trains a Random Forest model on the Iris dataset and predicts flower species based on sepal and petal measurements through an interactive UI. Built with Python, Scikit-learn, Pandas, Joblib, and Streamlit for real-time predictions and deployment.
-## Iris Flower Classification using Machine Learning and Streamlit
+Iris-Flower-Classification-Using-Streamlit
+A machine learning classification web application that predicts the species of an Iris flower based on sepal and petal measurements. The application uses a Random Forest Classifier trained on the famous Iris dataset and provides real-time predictions through an interactive Streamlit interface.
+Dataset
+The project uses the Iris Flower dataset.
+Dataset file used:
+Iris.csv
+Main columns:
 
-This project is a simple machine learning web application that predicts the species of an Iris flower based on its sepal and petal measurements. The application uses a Random Forest Classifier trained on the famous Iris dataset and provides real-time predictions through an interactive Streamlit interface.
 
-The project demonstrates the complete machine learning workflow including data preprocessing, model training, model saving, prediction generation, and web application deployment. Users can adjust flower feature values using sliders and instantly receive the predicted Iris species.
+sepal_length
 
-### Technologies Used
 
-* Python
-* Pandas
-* Scikit-learn
-* Joblib
-* Streamlit
+sepal_width
 
-### Features
 
-* Train a Random Forest Classification model
-* Save and load trained ML models using Joblib
-* Interactive web interface using Streamlit
-* Real-time Iris flower prediction
-* Simple and user-friendly design
+petal_length
 
-### Dataset
 
-The project uses the Iris dataset containing:
+petal_width
 
-* Sepal Length
-* Sepal Width
-* Petal Length
-* Petal Width
 
-Target Classes:
+class
 
-* Iris-setosa
-* Iris-versicolor
-* Iris-virginica
 
-### Workflow
+Target variable:
+class
+Input features:
 
-1. Load and preprocess the dataset
-2. Split data into training and testing sets
-3. Train the Random Forest model
-4. Save the trained model
-5. Build Streamlit UI
-6. Load the model for prediction
-7. Display prediction results interactively
 
-### Outcome
+sepal_length
 
-The application successfully predicts Iris flower species with good accuracy and demonstrates how machine learning models can be deployed as real-world web applications using Streamlit.
 
+sepal_width
+
+
+petal_length
+
+
+petal_width
+
+
+Output classes:
+
+
+Iris-setosa
+
+
+Iris-versicolor
+
+
+Iris-virginica
+
+
+
+Algorithms Used
+The following machine learning classification algorithm was used:
+
+
+Random Forest Classifier
+
+
+Best Algorithm
+The best-performing model used:
+Random Forest Classifier
+The trained model is saved as:
+rf_model.sav
+
+Evaluation Metric
+The model was evaluated using:
+
+
+Accuracy Score
+
+
+Example accuracy:
+Accuracy: 0.91
+
+Tech Stack
+Machine Learning
+
+
+Python
+
+
+Pandas
+
+
+NumPy
+
+
+Scikit-learn
+
+
+Joblib
+
+
+Web Framework
+
+
+Streamlit
+
+
+Version Control
+
+
+Git
+
+
+GitHub
+
+
+
+Project Structure
+Iris-Flower-Classification/│├── Data/│   └── Iris.csv│├── app.py├── model.py├── prediction.py├── rf_model.sav├── requirements.txt└── README.md
+
+How to Run Locally
+Clone the repository:
+git clone https://github.com/YOUR_USERNAME/Iris-Flower-Classification.git
+Move into the project folder:
+cd Iris-Flower-Classification
+Create a virtual environment:
+python -m venv venv
+Activate virtual environment on Windows:
+venv\Scripts\activate
+Install dependencies:
+pip install -r requirements.txt
+Train the model:
+python model.py
+Run the Streamlit application:
+streamlit run app.py
+Open in browser:
+http://localhost:8501
+
+Requirements
+streamlitpandasnumpyscikit-learnjoblib
