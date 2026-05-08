@@ -145,3 +145,8 @@ python model.py
 ```bash
 streamlit run app.py
 ```
+## Open in browser
+
+```text
+https://irisprediction-gv2viwk48shrynarztmjrl.streamlit.app/
+```
